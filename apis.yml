@@ -1,8 +1,24 @@
 aid: noodle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/noodle.png
 name: Noodle
-description: 'Noodle is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Noodle is a Brazilian fintech building financial infrastructure for the creator economy. It
+  provides automated payouts to creators, influencers, and vendors; FastPay early access to future earnings;
+  noodleOS, a unified platform for campaigns, creator data, payments, and asset tracking; global payouts
+  powered by Ebanx; foreign-exchange settlement; and credit and capital products underwritten in part on a
+  creator''s social presence. Backed by QED Investors, Noodle serves media companies, agencies, and platforms
+  that pay content creators. The company references API-based integrations but publishes no public developer
+  portal or API documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/noodle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Payments
+- Payouts
+- Creator Economy
+- Brazil
+- Foreign Exchange
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/noodle-domain-security.yml
 - type: Website
   url: https://noodle.cx
+- type: Support
+  url: https://ajuda.noodle.cx/
+- type: Blog
+  url: https://noodle.cx/news/home
+- type: TermsOfService
+  url: https://noodle.cx/termos
+- type: PrivacyPolicy
+  url: https://noodle.cx/termos
+- type: Login
+  url: https://split.noodle.cx
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
